@@ -1,0 +1,8 @@
+.img {
+    padding: 20pt 36pt;
+    border-radius: 50%;
+    width: 300pt;
+    height: 300pt;
+    object-position: center;
+    object-fit: cover;
+}

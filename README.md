@@ -20,3 +20,26 @@ As you know, our stack aligns with the tech in place here. The key areas we’re
 With Docker and Node installed, run `docker-compose up` to start the server. Running it will bootstrap the database with sample data and Hasura's metadata. The DB is exposed in port 5432 mapped to your local environment. This is the connection string `postgres://postgres:postgrespassword@postgres:5432/postgres`.
 
 To run the react app, inside `app` run `npm install` then run `npm run dev`. Vite will open in http://localhost:5173/.
+
+# Project outcome
+
+The project offers on main page located at the root level of the app http://localhost:5173/.
+
+![](images/default.png)
+
+In this page, you can choose two way to load aminal pictures by cagegory:
+
+* By selecting a category from the list.
+* By typing the category name (or partially) in the text field.
+
+Randomly the app will pick a number of pictures of the chosen category to display.
+
+![](images/main.png)
+
+## Features
+
+* Support partial names for categories to search. If the text match multiple categories, it will return all matching categories.
+![](images/multiple-cat.png)
+* By introduccing an empty string, you can clear the previous set of images.
+* The text field implements the debouce approach by waiting half second before triggering the query. This allow the user to type with incurring in too many resquest against the API.
+* Because images are big and many *(the app can randomly generate up to 100 images to display)*, the app use [react-lazy-load-image-component](https://www.npmjs.com/package/react-lazy-load-image-component)

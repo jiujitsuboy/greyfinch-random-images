@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 5pt 20pt;
+    font-size: 25pt;
+    font-weight: bolder;
+    font-family: fantasy;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, white, white, #7662d2, #7662d2);
+}
+
+.animals_img {
+    background: no-repeat url("animals.jpeg");
+
+}

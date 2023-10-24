@@ -1,0 +1,21 @@
+.container {
+    width: 100%;
+}
+
+.summary {
+    text-align: center;
+    font-size: 20pt;
+}
+
+.summary_bold {
+    font-weight: bolder;
+}
+
+.canvan {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    min-width: 200pt;
+}
