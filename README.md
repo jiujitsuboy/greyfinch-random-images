@@ -42,4 +42,10 @@ Randomly the app will pick a number of pictures of the chosen category to displa
 ![](images/multiple-cat.png)
 * By introduccing an empty string, you can clear the previous set of images.
 * The text field implements the debouce approach by waiting half second before triggering the query. This allow the user to type with incurring in too many resquest against the API.
-* Because images are big and many *(the app can randomly generate up to 100 images to display)*, the app use [react-lazy-load-image-component](https://www.npmjs.com/package/react-lazy-load-image-component)
+* Lazing loading of images (the app can randomly generate up to 100 images to display)*, the app use [react-lazy-load-image-component](https://www.npmjs.com/package/react-lazy-load-image-component)
+
+![](images/lazy-loading.png)
+
+* Responsive desing
+
+![](images/responsive.png)
