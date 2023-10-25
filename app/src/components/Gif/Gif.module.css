@@ -1,8 +1,15 @@
 .img {
-    padding: 20pt 36pt;
+    padding: 20pt 10pt;
     border-radius: 50%;
-    width: 300pt;
-    height: 300pt;
+    width: 250pt;
+    height: 250pt;
     object-position: center;
     object-fit: cover;
+}
+
+@media (max-width: 1000px) {
+    .img {
+        padding: 20pt 0;
+        min-width: 200pt;
+    }
 }

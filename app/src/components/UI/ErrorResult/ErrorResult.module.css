@@ -2,3 +2,10 @@
     color: red;
     text-align: center;
 }
+
+@media (max-width: 1000px) {
+    .error_message {
+        margin-top: 20pt;
+        min-width: 50pt;
+    }
+}

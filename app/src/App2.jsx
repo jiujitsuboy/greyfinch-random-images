@@ -35,7 +35,6 @@ function SampleQuery() {
   if (fetching) return <p>Loading...</p>;
   if (error) return <p>Oh no... {error.message}</p>;
 
-  console.log({ data })
   return (
     <div>
       This is a sample query on how to connect to GraphQL.

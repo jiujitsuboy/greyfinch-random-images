@@ -1,9 +1,9 @@
 import React from 'react';
 import classes from './ErrorResult.module.css'
 
-const ErrorResult = () => {
+const ErrorResult = ({ error }) => {
     return (
-        <div className={classes.error_message}>Oh no... {error.message}</div>
+        <div className={classes.error_message}>Oh no... {JSON.stringify(error)}</div>
     );
 };
 

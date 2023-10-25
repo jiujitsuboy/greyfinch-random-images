@@ -22,7 +22,7 @@ const GetRandomByCategory = ({ category, randomData }) => {
   `
 
   if (!category || limit === 0) {
-    return <div>No Results</div>
+    return <EmptyResult category={category} />
   }
   let [result] = useQuery({
     query,
@@ -39,7 +39,7 @@ const GetRandomByCategory = ({ category, randomData }) => {
   //loading
   if (fetching) return <LoadingSpinner />
   //Error
-  if (error) return <ErrorResult />;
+  if (error) return <ErrorResult error={error} />;
 
   const dataLength = data.gifs.length
   //Empty result

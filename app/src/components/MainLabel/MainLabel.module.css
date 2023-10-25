@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: auto;
+    margin: 0pt 10pt;
     padding: 5pt 20pt;
     font-size: 25pt;
     font-weight: bolder;
@@ -10,6 +10,20 @@
     border-radius: 20px;
     background-image: linear-gradient(to right, white, white, #7662d2, #7662d2);
 }
+
+@media (max-width: 1000px) {
+    .container {
+        flex-direction: column;
+        background-image: linear-gradient(to bottom, white, white, #7662d2, #7662d2);
+        padding: 0pt;
+        margin: 0pt auto;
+        width: 80%;
+        max-width: 700pt;
+        min-width: 350pt;
+    }
+}
+
+
 
 .animals_img {
     background: no-repeat url("animals.jpeg");
